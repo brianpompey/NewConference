@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  keynote: MyString
+  category: MyText
+  date: 2022-08-04
+  time: 2022-08-04 13:58:07
+
+two:
+  name: MyString
+  keynote: MyString
+  category: MyText
+  date: 2022-08-04
+  time: 2022-08-04 13:58:07
