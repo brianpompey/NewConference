@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'talks/index'
+  get 'talks/show'
+  get 'workshops/index'
+  get 'workshops/show'
   get 'donations/new'
   get 'donations/create'
   get 'conferences/index'

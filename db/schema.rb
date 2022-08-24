@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_04_175955) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_24_215112) do
   create_table "conferences", force: :cascade do |t|
     t.string "name"
     t.integer "min_donation", default: 0
@@ -26,6 +26,24 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_04_175955) do
     t.integer "user_id"
     t.integer "conference_id"
     t.integer "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "talks", force: :cascade do |t|
+    t.integer "conference_id"
+    t.string "name"
+    t.string "speaker"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "workshops", force: :cascade do |t|
+    t.integer "conference_id"
+    t.string "name"
+    t.string "speaker"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
