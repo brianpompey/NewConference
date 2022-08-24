@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/create'
+  get 'users/show'
   get 'talks/index'
   get 'talks/show'
   get 'workshops/index'
